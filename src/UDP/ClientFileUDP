@@ -12,9 +12,10 @@ public class ClientFileUDP
     {
         byte[] byteNum = new byte[500];
 
-         FileInputStream f = new FileInputStream("/Users/amnakhwaja/InstantMessengerVS/UDP.txt");
-         System.out.println("UDP File Transfer Successful "); 
-
+         FileInputStream f = new FileInputStream("/Users/amnakhwaja/InstantMessengerVS/src/UDP_input.txt");
+         System.out.println("UDP File Transfer Successful"); 
+         
+        
         //created DatagramSocket object to send : receive data //
         try (DatagramSocket DataSocket = new DatagramSocket(3066)) 
         {
@@ -33,3 +34,5 @@ public class ClientFileUDP
         f.close();
     }
 }
+ 
+     
